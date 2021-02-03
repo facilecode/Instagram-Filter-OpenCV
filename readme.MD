@@ -1,1 +1,1 @@
-![Alt text](kylie-outlined.jpg?raw=true "Title")
+![Alt text](kylie-outlined.png?raw=true "Title")
