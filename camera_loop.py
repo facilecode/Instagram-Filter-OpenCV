@@ -18,10 +18,11 @@ def preprocess(original):
     padded = np.pad(outline,((0,0),(0,offset)), mode="constant")
     shifted = padded[:,offset:]
 
-    gray_outline = cv2.addWeighted(gray, 1, shifted, 1, 0)
+    #gray_outline = cv2.add(gray,shifted)
+    gray_outline = gray + shifted
 
     outline_3_channel = np.stack((shifted,)*3, axis=-1)
-    original_outline = cv2.addWeighted(original, 1, outline_3_channel, 1, 0)
+    original_outline = cv2.add(original, outline_3_channel)
 
     return original_outline
 
