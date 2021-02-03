@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-original = cv2.imread('kylie.png')
+original = cv2.imread('assets/kylie.png')
 #im = cv2.resize(im, (300,200))
 
 cv2.imshow('Original', original)
@@ -35,3 +35,4 @@ original_outline = cv2.addWeighted(original, 1, outline_3_channel, 1, 0)
 cv2.imshow('Original outline', original_outline)
 cv2.waitKey(3000) #show during 3 seconds
 
+cv2.imwrite('assets/kylie-outline.png', original_outline)
