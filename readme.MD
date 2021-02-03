@@ -1,6 +1,6 @@
 # Instagram's 'Outline' Filter Implementation
 
-![Alt text](assets/kylie-outlined.png?raw=true "Title")
+![Alt text](assets/kylie-outline.png?raw=true "Title")
 
 ## Packages used
 
